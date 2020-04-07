@@ -1,0 +1,66 @@
+// 배열 메소드
+console.log("===============배열 메소드===============");
+var colors = ['black', 'white', 'yellow'];
+var fruits = ['mango', 'banana', 'apple'];
+
+var test = fruits.concat(colors);
+console.log(test);
+
+console.log("===============배열 메소드 : join ===============");
+// 배열 메소드 - join
+var str = fruits.join(',');
+console.log(str);
+
+console.log("===============배열 메소드 : pop, push : stack 지원 ===============");
+// 배열 메소드 - pop, push : stack 지원
+var color = colors.pop();
+console.log(color);
+console.log(colors);
+
+colors.push('red');
+console.log(colors);
+
+console.log("===============배열 메소드 : reverse ===============");
+// 배열 메소드 - reverse
+console.log(fruits);
+fruits.reverse();
+console.log(fruits);
+
+console.log("===============배열 메소드 : shift ===============");
+// 배열 메소드 - shift
+var numbers = [4000, 8000, 3000, 5000, 1000];
+console.log(numbers);
+numbers.shift();
+console.log(numbers);
+
+console.log("===============배열 메소드 : slice ===============");
+// 배열 메소드 - slice
+var numbers2 = numbers.slice(0, 3);
+console.log(numbers2);
+console.log(numbers);
+
+console.log("===============배열 메소드 : sort ===============");
+// 배열 메소드 - sort
+var numbers3 = [40, 5, 10, 2, 9, 1];
+console.log(numbers3);
+numbers3.sort();
+console.log(numbers3);
+
+console.log("===============배열 메소드 : splice ===============");
+// 배열 메소드 - slice
+// index부터 count개 삭제 후 삭제 요소를 배열로 변환
+console.log(fruits);
+var fruits2 = fruits.splice(0/*index*/, 2/*count*/);
+console.log(fruits2);
+console.log(fruits);
+
+var a1 = [0, 1, 2, 3, 4];
+console.log(a1);
+a1.splice(1, 3, 10);
+console.log(a1);
+
+var a2 = [0, 1, 2, 3, 4];
+console.log(a2);
+var a3 = a2.splice(1, 1, 10);
+console.log(a2);
+console.log(a3);
